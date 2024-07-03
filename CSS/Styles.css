@@ -1,0 +1,244 @@
+/* Estilos aplicados en todas las paginas generadas */
+
+/* Estilos por estiqueta */
+  /* Se establece un minimo de ancho de las paginas para manter su aspecto general cuando se achique la pantalla */
+    html {
+      min-width: 700px;
+    }
+  /* Estilos aplicados al carrusel de fotos de desplazamiento infinito aplicado a la pagina de Index */
+    #container div {
+      height: 200px;
+      min-width: 300px;
+      margin-left: 50px;
+      animation: slide 8s linear infinite;
+    }
+
+    #container div img {
+      width: 300px;
+      height: 200px;
+    }
+
+    #container div p {
+      font-size: 40px;
+    }
+
+  /* Estilos aplicados al boton de saber mas del Index */
+    a button {
+      width: 200px;
+      height: 100px;
+      margin: 30px 0px;
+      text-decoration: none;
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+    }
+
+
+/* Estilos por id */
+  /* Estilos aplicados al logo de Amazon't del navbar */
+    #logo {
+      height: 60px;
+    }
+
+  /* Estilos aplicados al navbar */
+    #navBar {
+      background-color: #232F3E;
+      height: auto;
+      color: white;
+      min-height: 80px;
+      align-content: center;
+      position: sticky;
+      top: 0px;
+      z-index: 2;
+    }
+  /* Estilos aplicados al contenedor del carrusel de fotos de desplazamiento infinito aplicado a la pagina de Index */
+    #container {
+      overflow: hidden;
+      display: flex;
+      height: 250px;
+      width: auto;
+      margin: 0px;
+    }
+
+  /* Estilos aplicados al contenido del contenido de la pagina de Productos para permitir el funcionamiento del menu desplazable */
+    #main {
+      transition: margin-right .5s;
+      margin: 0px 20px;
+    }
+
+
+/* Estilos por clase */
+  /* Correccion de estilos propios de las clases de bootstrap para dar el aspecto deseado */
+    .row {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .col-xs-3 h3 a {
+      padding: 10px 10px;
+      color: #EFF7CF;
+      text-decoration: none;
+    }
+
+    .col-xs-3 h3 a:hover {
+      background: #7c808a;
+    }
+
+    footer .row .col-xs-12 {
+      background-color: #161d25;
+      color: white;
+      position: relative;
+      bottom: 0%;
+    }
+
+    .form-horizontal {
+      align-self: center;
+      width: 500px;
+      border: thin solid rgba(182, 182, 182, 0.452);
+      border-radius: 10px
+    }
+    
+    .form-group {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .btn {
+      background-color: #13df00;
+      color: white;
+    }
+    
+    .btn_form {
+      margin-left: 45px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      width: 400px;
+      font-size: 20px;
+    }
+
+  /* Se usan para ajustar el tamaño del titulo de bienvenida y su subtitulo respectivamente*/
+    .Bienvenida {
+      font-size: 10vw
+    }
+
+    .frase {
+      font-size: 5vw
+    }
+
+  /* Estilos aplicados al estrido de "Nosotros" y la explicacion del boton de "Saber mas" presentes en el Index */
+    .text {
+      font-size: 20px;
+      color: black;
+      min-width: 400px;
+    }
+
+  /* Estilos aplicados al menu desplazable presente en la pagina de "Productos" */
+    .sidebar {
+      height: 85%;
+      width: 0px;
+      position: fixed;
+      z-index: 1;
+      top: 80px;
+      right: 0px;
+      background-color: #0d1116;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidebar div {
+      padding: 8px 8px 8px 8px;
+      text-decoration: none;
+      font-size: 15px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar #closebtn {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      font-size: 36px;
+      text-decoration: none;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar #closebtn:hover {
+      color: #f1f1f1;
+    }
+
+  /* Estilo aplicado a las fotos presentes en la galeria de imagenes presente en Productos */
+    .foto_producto {
+      padding: 0px;
+      margin: 10px 20px;
+      border: thin solid rgba(182, 182, 182, 0.452);
+      border-radius: 10px;
+      width: 30%;
+      min-width: 200px;
+
+    }
+
+  /* La clase sirve para alinear las fotos presentes en la galeria de imagenes presente en Productos */
+    .linea_productos {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+  /* Estilos aplicados a los botones de "Agregar al carrito" presentes en la galeria de imagenes presente en Productos */
+    .btn_agregar_car {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      width: 70%;
+      font-size: 20px;
+    }
+
+  /* Estilos aplicados a cada opcion creada en la lista de compras presente en Productos */
+    .opcion_car {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0px;
+    }
+
+/* Propiedades responsive */
+  /* Propiedades utilizadas para las paginas de Index, Ingreso y Registro */
+    @media (max-width: 700px) {
+      .Bienvenida {
+        font-size: 70px;
+      }
+
+      .frase {
+        font-size: 35px;
+      }
+    }
+
+  /* Propiedades utilizadas para las paginas de Productos */
+    @media (max-width: 992px) {
+
+      .nav_centrar {
+        text-align: center;
+      }
+
+    }
+
+    @media (max-width: 992px) {
+      .sidebar {
+        margin-top: 37px;
+      }
+    }
+
+/* Animaciones */
+  /* Animacion aplicada para el efecto del carruzel de fotos de desplazamiento infinito presente en Index */
+    @keyframes slide {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-1750px, 0, 0);
+        /* The image width */
+      }
+    }

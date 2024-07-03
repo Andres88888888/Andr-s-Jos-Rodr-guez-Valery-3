@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Se agrega la imagen de icono del sitio web -->
+  <link rel="icon" type="image/jpg" href="Imagenes/Amazon't icon.png" />
+
+  <!-- Se agregan las propiedades de bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Se agregan los estilos de Styles -->
+  <link rel="stylesheet" href="CSS/Styles.css">
+
+  <!-- Se agregan los documentos de Javascript -->
+  <script src="Javascript/Javascript.js"></script>
+
+  <!-- Se agrega el titulo de la pagina -->
+  <title>Inicio</title>
+</head>
+
+<body>
+  <!-- Se presenta el navegador web de la pagina -->
+  <div id="navBar" class="row ">
+    <div class="col-md-3 nav_centrar"><img id="logo" src="Imagenes/Amazon't logo.png" alt="Amazon't logo" /> </div>
+    <div class="col-md-9">
+      <div class="col-xs-3 nav_centrar">
+        <h3><a href="Index.html">Inicio</a></h3>
+      </div>
+
+      <div class="col-xs-3 nav_centrar">
+        <!-- Al presionar el boton, se ejecutara la funcion "Advertencia_productos()" -->
+        <h3><a id="Productos" onclick="Advertencia_productos()">Productos</a></h3>
+      </div>
+
+      <div class="col-xs-3 nav_centrar">
+        <h3><a href="Registro.html">Registrar</a></h3>
+      </div>
+
+      <div class="col-xs-3 nav_centrar" style="padding-left: 0px; padding-right: 0px;">
+        <h3><a href="Ingreso.html">Iniciar sesion</a></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Se presenta la bienvenida a la pagina -->
+  <header>
+    <div class="row">
+      <div class="col-xs-12 text-center" style="margin-top: 10px;">
+        <h1 class="Bienvenida">Bienvenido</h1>
+      </div>
+
+      <div class="col-xs-12 text-center" style="margin-top: 10px;">
+        <h1 class="frase">A la casa de objetos inutiles</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Se presenta el carrusel de fotos de desplazamiento infinito; se repite 2 veces el grupo de fotos para hacer el efecto de que el movimiento es continuo -->
+    <div id="container">
+      <div> <img src="Imagenes/Imagenes productos/Chicle mascado.jpg" alt="Chicle mascado"></div>
+      <div> <img src="Imagenes/Imagenes productos/Cepiscoba.jpg" alt="Cepiscoba"></div>
+      <div> <img src="Imagenes/Imagenes productos/Cubiertos 3D.jpg" alt="Cubiestor 3D"></div>
+      <div> <img src="Imagenes/Imagenes productos/Tenedorcadena.jpg" alt="Tenedorcadena"></div>
+      <div> <img src="Imagenes/Imagenes productos/Tetera bocaplana.jpg" alt="Tetera bocaplana"></div>
+
+      <div> <img src="Imagenes/Imagenes productos/Chicle mascado.jpg" alt="Chicle mascado"></div>
+      <div> <img src="Imagenes/Imagenes productos/Cepiscoba.jpg" alt="Cepiscoba"></div>
+      <div> <img src="Imagenes/Imagenes productos/Cubiertos 3D.jpg" alt="Cubiestor 3D"></div>
+      <div> <img src="Imagenes/Imagenes productos/Tenedorcadena.jpg" alt="Tenedorcadena"></div>
+      <div> <img src="Imagenes/Imagenes productos/Tetera bocaplana.jpg" alt="Tetera bocaplana"></div>
+    </div>
+
+    <!-- Se presenta la seccion de "Sobre nosotros" -->
+    <div>
+      <div class="col-xs-12">
+        <h1 style="color: black;" class="text-center"><b>Sobre nosotros</b></h1>
+      </div>
+
+      <div class="row">
+        <div class="media-left">
+          <img src="Imagenes/Sitio Amazon't.png" class="media-object"
+            style="width:450px; height:300px; padding-left: 20px;">
+        </div>
+        
+        <div class="media-body" style="padding-right: 20px">
+          <p class="text-justify text">
+            Amazon't es una empresa multinacional de envíos y comercio australiana que se especializa en la distribución
+            de objetos inútiles. Fundada en 1994 A.C. por Godefrid Besos, quien siempre vio como existían tantas tiendas
+            y
+            negocios que otorgaban a millones de usuarios aquello que necesitaban y/o quería; pero ¿Que pasaba con
+            aquellos objetos que nadie querría? Y como fiel creyente de la frase "La basura de uno es el tesoro de
+            otros",
+            fundo Amazon't (no confundir con su copia de milenios después Amazon), uno de los menores menoristas en
+            línea
+            del mundo, que ofrece una gama de productos inútiles que van desde libros quemados y discos de música
+            arrítmica y atonal, hasta armas que son un mayor peligro para el usuario que para el oponente. Aquí poseemos
+            2
+            lemas, “From A to Z” (traducido al español: “De la A a la Z”), que refleja cómo funciona el abecedario; y
+            "Bienvenido a la casa de los objetos inútiles", que resume lo que somos. ¿Quieres saber mas? Revisa nuestros
+            productos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Se presenta la seccion de productos -->
+    <div>
+      <div class="col-xs-12 text-center">
+        <h1 style="color: black;"><b>Productos</b></h1>
+      </div>
+
+      <div class="col-xs-12 text-center">
+        <p class="text">
+          Para acceder al los productos presione al boton de abajo o el del menu, considere que debe tener una cuenta
+          iniciada (el boton le llevara a registrarse)
+        </p>
+        <!-- Al presionar el boton, se ejecutara la funcion "Advertencia_productos()" -->
+        <a><button type="button" onclick="Advertencia_productos()">Saber mas</button></a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Se presenta el pie de la pagina -->
+  <footer>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Universidad Bicentenaria de Aragua </h2>
+        <h3>Hecho por Andrés Rodríguez 2024</h3>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" style="min-width: 1075px;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Se agrega la imagen de icono del sitio web -->
+  <link rel="icon" type="image/jpg" href="Imagenes/Amazon't icon.png" />
+
+    <!-- Se agrega el enlace de bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Se agregan los estilos de Styles -->
+  <link rel="stylesheet" href="CSS/Styles.css">
+
+  <!-- Se agregan los documentos de Javascript y Firebase code -->
+  <script src="Javascript/Javascript.js"></script>
+  <script src="Javascript/Firebase code.js"></script>
+
+  <!-- Se agrega el titulo de la pagina -->
+  <title>Productos</title>
+</head>
+
+<body>
+  <!-- Este espacio representa al menu desplegable del carrito, que se encuentra fuera del contenido de la pagina -->
+  <div id="mySidebar" class="sidebar">
+    <!-- Al presionar el boton, se recogera el menu desplegable del carrito -->
+    <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+    <div class="d-flex flex-column mb-3">
+      <ul class="list-group" id="Lista_car">
+        <li class="list-group-item text-center"><b>Lista de productos</b></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Se presenta el navegador web de la pagina -->
+  <div id="navBar" class="row ">
+    <div class="col-md-3 nav_centrar"><img id="logo" src="Imagenes/Amazon't logo.png" alt="Amazon't logo" /> </div>
+
+    <div class="col-md-9">
+      <div class="col-xs-3 nav_centrar">
+        <!-- Al "Cerrar sesion" se reenviara a Index, aunque no se cierra realmente la sesion -->
+        <h3><a href="Index.html">Cerrar sesion</a></h3>
+      </div>
+
+      <div class="col-xs-3 nav_centrar" style="padding-left: 50%; padding-right: 0%;">
+        <!-- Al presionar el boton, se desplegara el menu desplegable del carrito -->
+        <h3><a href="javascript:void(0)" id="openbtn" onclick="openNav()">Carrito☰</a></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido de la pagina -->
+  <main id="main">
+
+    <!-- Presentacion de la pagina -->
+    <h1 class="text-center" style="padding-top: 20px;">Productos</h1>
+
+    <!-- Se presenta la primera linea de productos -->
+    <div class="row linea_productos">
+      <div class="col-xs-3 foto_producto text-center" >
+        <img src="Imagenes/Imagenes productos/Copa doble.jpg" alt="Copa doble" width="70%" height="70%"    style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Copa doble</h2>
+
+        <button id="Copa doble" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+
+      <div class="foto_producto text-center">
+        <img src="Imagenes/Imagenes productos/Auto-regadera.jpg" alt="Maceta regadera" width="70%" height="70%"  style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Maceta regadera</h2>
+
+        <button id="Maceta regadera" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+
+      <div class="col-xs-3 foto_producto text-center">
+        <img src="Imagenes/Imagenes productos/Llave de base circular.jpg" alt="Llave de base circular" width="70%" height="70%"  style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Llave de base circular</h2>
+
+        <button id="Llave de base circular" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Se presenta la segunda linea de productos -->
+    <div class="row linea_productos">
+      <div class="col-xs-3 foto_producto text-center">
+        <img src="Imagenes/Imagenes productos/Tenedorcadena.jpg" alt="Tenedor cadena" width="70%" height="70%"  style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Tenedor cadena</h2>
+
+        <button id="Tenedor cadena" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+
+      <div class="col-xs-3 foto_producto text-center">
+        <img src="Imagenes/Imagenes productos/Cepiscoba.jpg" alt="Cepiscoba (con pala)" width="70%" height="70%"    style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Cepiscoba (con pala)</h2>
+
+        <button id="Cepiscoba (con pala)" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+
+      <div class="col-xs-3 foto_producto text-center">
+        <img src="Imagenes/Imagenes productos/Tetera bocaplana.jpg" alt="Tetera Bocaplana" width="70%" height="70%"   style="margin-top: 20px;">
+
+        <h2 style="margin-top: 5px;">Tetera Bocaplana</h2>
+
+        <button id="Tetera Bocaplana" class="btn btn-default btn_agregar_car" onclick="Agregar_producto(this.id)">Agregar al carrito</button>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Se presenta el pie de la pagina -->
+  <footer>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2>Universidad Bicentenaria de Aragua </h2>
+        <h3>Hecho por Andrés Rodríguez 2024</h3>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

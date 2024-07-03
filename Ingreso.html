@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Se agrega la imagen de icono del sitio web -->
+  <link rel="icon" type="image/jpg" href="Imagenes/Amazon't icon.png" />
+
+  <!-- Se agregan las propiedades de bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Se agregan los estilos de Styles -->
+  <link rel="stylesheet" href="CSS/Styles.css">
+
+  <!-- Se agregan los documentos de Firebase code -->
+  <script type="module" src="Javascript/Firebase code.js" defer></script>
+
+  <!-- Se agrega el titulo de la pagina -->
+  <title>Ingreso</title>
+</head>
+
+<body>
+  <!-- Se presenta el logo superior de la pagina -->
+  <header>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+          <!-- Al presionar el logo, se redirigira la pagina a Index -->
+          <a href="Index.html">
+            <img src="Imagenes/Amazon't alt logo.png" alt="Logo alterno de Amazon't" style="width: 270px; height: 100px;">
+          </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Se presenta el formulario de ingreso -->
+    <div class="row">
+      <div>
+        <form class="form-horizontal" style="margin: auto;">
+          
+          <div style="margin: 0px; margin-left: 30px;">
+            <h1>Ingreso</h1>
+          </div>
+
+          <div style="margin: 0px; margin-left: 30px;">
+            <label class="control-label" for="correo">Correo:</label>
+            
+              <input type="email" class="form-control" id="email_ingreso" placeholder="Correo" required style="width: 400px; "> <br>
+          </div>
+
+          <div style="margin: 0px;  margin-left: 30px;">
+            <label class="control-label" for="contraseña">Contraseña:</label>
+
+              <input type="password" class="form-control" id="password_ingreso" placeholder="Contraseña" required style="width: 400px;"><br>
+
+              <p><b>Aclaraciones:</b>Ingrese una contraseña de al menos 6 caracteres</p>
+          </div>
+          
+          <div class="form-group">        
+            <div>
+              <button type="submit" class="btn btn-default btn_form" id="submit_ingreso">Enviar</button>
+            </div>
+          </div>
+          <!-- Al presionar el texto, se redirigira la pagina a Registro -->
+          <a href="Registro.html" style="margin-left: 30px; margin-bottom: 10px;"><b>No tengo una cuenta</b></a>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Se presenta el pie de la pagina -->
+  <footer>
+    <div class="row">
+      <div class="col-xs-12 text-center" style="position: absolute;">
+        <h2>Universidad Bicentenaria de Aragua </h2>
+        <h3>Hecho por Andrés Rodríguez 2024</h3>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
